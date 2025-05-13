@@ -1,0 +1,41 @@
+.portada {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .bannerGif-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bannerGif-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0;
+  }
+  

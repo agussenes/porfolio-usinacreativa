@@ -1,0 +1,113 @@
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: none;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    left: 0.75rem;
+    top: 1rem;
+    color: #999;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 0.25rem;
+}
+
+/* Animación al enfocar o escribir */
+input:focus+label,
+textarea:focus+label,
+input.has-value+label,
+textarea.has-value+label {
+    top: -0.6rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: #007bff;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover:not([disabled]) {
+    background-color: #0056b3;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+}
+
+.status-message {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 0.8rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
