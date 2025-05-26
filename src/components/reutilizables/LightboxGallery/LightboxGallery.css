@@ -1,0 +1,35 @@
+.lightbox-gallery .thumb {
+    max-width: 150px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.lightbox-gallery .thumb:hover {
+    transform: scale(1.05);
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+}

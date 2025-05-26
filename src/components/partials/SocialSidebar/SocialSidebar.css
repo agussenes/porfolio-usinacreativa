@@ -1,0 +1,67 @@
+.social-sidebar {
+    position: fixed;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background: var(--color-primary);
+    padding: 8px 6px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-sidebar .icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.social-sidebar .icon:hover {
+    transform: scale(1.1);
+}
+
+/* Colores individuales por red */
+.icon.facebook {
+    background-color: #1877f2;
+}
+
+.icon.twitter {
+    background-color: #1da1f2;
+}
+
+.icon.email {
+    background-color: #6c757d;
+}
+
+.icon.whatsapp {
+    background-color: #25d366;
+}
+
+.icon.telegram {
+    background-color: #0088cc;
+}
+
+.icon.plus {
+    background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+
+
+    .social-sidebar .icon {
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 0.9rem;
+
+    }
+}

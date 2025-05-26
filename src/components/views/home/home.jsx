@@ -1,23 +1,35 @@
+import { useState } from 'react';
+
+import HeroSwiper from '../../reutilizables/HeroSwiper/HeroSwiper';
 import SEO from '../../../seo/SEO';
+import slides from './slides';
+
+import CategoryFilters from './subcomponents/CategoryFilters';
+import PortfolioGrid from './subcomponents/PortfolioGrid';
+import AboutUs from './subcomponents/AboutUs';
+import Services from './subcomponents/Services';
+import ClientsCarousel from './subcomponents/ClientsCarousel';
+import ContactBanner from '../../reutilizables/ContactBanner/ContactBanner';
 
 function Home() {
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
+
   return (
     <>
       <SEO
-        title="Inicio - Luz y Fuerza Córdoba"
-        description="Bienvenidos al Sindicato de Luz y Fuerza de Córdoba. Noticias, beneficios y lucha sindical."
-        url="https://tusitio.com/"
-        image="https://tusitio.com/img/home-og-image.jpg"
+        title="Inicio - Usina Creativa"
+        description="Agencia creativa en Córdoba: gráfica, audiovisual, institucional y más."
+        url="https://usinacreativa.com.ar/"
+        image="https://usinacreativa.com.ar/img/home-og-image.jpg"
       />
 
-      <section className="home">
-        <div className="container text-center py-5">
-          <h1 className="display-4">Bienvenidos a Luz y Fuerza Córdoba</h1>
-          <p className="lead">
-            Defendiendo los derechos de los trabajadores de la energía desde siempre.
-          </p>
-        </div>
-      </section>
+      <HeroSwiper slides={slides} />
+      <CategoryFilters selected={selectedCategory} setSelected={setSelectedCategory} />
+      <PortfolioGrid selectedCategory={selectedCategory} />
+      <AboutUs />
+      <Services />
+      <ClientsCarousel />
+      <ContactBanner />
     </>
   );
 }

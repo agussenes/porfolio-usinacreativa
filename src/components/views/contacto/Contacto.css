@@ -1,0 +1,13 @@
+.contacto-section {
+  max-width: 1200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  border-radius: 0.5rem;
+}

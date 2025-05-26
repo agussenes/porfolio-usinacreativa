@@ -1,0 +1,115 @@
+/* HeroSwiper.css */
+.hero-swiper-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: 70vh;
+}
+
+.hero-slide {
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+
+}
+
+.hero-slide-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-slide-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-slide-text {
+    font-size: 1.2rem;
+    text-align: left;
+    max-width: 51%;
+
+
+}
+
+.contenedorBotonHeroSwipper {
+    display: flex;
+    justify-content: left;
+}
+
+.botonHeroSwiper {
+    transition: all 0.3s ease-in-out !important;
+    font-weight: bold !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: max-content;
+    font-size: 1.2rem !important;
+    padding-top: 0.6rem !important;
+    padding-left: 1rem !important;
+}
+
+.botonHeroSwiper:hover {
+    background-color: var(--color-celeste) !important;
+    color: var(--color-background) !important;
+    transform: scale(1.05);
+    text-decoration: none !important;
+}
+
+.botonHeroSwiper i {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.botonHeroSwiper i:hover {
+    font-size: 1.2rem !important;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-swiper {
+        height: 80vh;
+    }
+
+    .hero-slide-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .hero-slide-text {
+        font-size: 1rem;
+    }
+
+    .botonHeroSwiper {
+        font-size: 1rem !important;
+    }
+
+    .hero-slide-title {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-slide-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contenedorBotonHeroSwipper{
+        display: flex;
+        justify-content: center;
+    }
+
+}

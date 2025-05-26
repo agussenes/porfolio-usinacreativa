@@ -1,0 +1,115 @@
+/* Swiper general */
+.hero-swiper-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: auto;
+}
+
+/* Imagen contenida como <img> */
+.bannerGif-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerGif-img img.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Overlay de contenido */
+.hero-slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+/* Título, bajada y botón */
+.hero-slide-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-slide-text {
+    font-size: 1.2rem;
+    text-align: left;
+    max-width: 50%;
+}
+
+.contenedorBotonHeroSwipper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.botonHeroSwiper {
+    transition: all 0.3s ease-in-out !important;
+    font-weight: bold !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: max-content;
+    font-size: 1.2rem !important;
+    padding-top: 0.6rem !important;
+    padding-left: 1rem !important;
+}
+
+.botonHeroSwiper:hover {
+    background-color: var(--color-celeste) !important;
+    color: var(--color-background) !important;
+    transform: scale(1.05);
+    text-decoration: none !important;
+}
+
+.botonHeroSwiper i {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    .hero-swiper {
+        height: 80vh;
+    }
+
+    .hero-slide-title {
+        font-size: 2rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-slide-text {
+        font-size: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contenedorBotonHeroSwipper {
+        justify-content: center;
+    }
+
+    .botonHeroSwiper {
+        font-size: 1rem !important;
+    }
+}

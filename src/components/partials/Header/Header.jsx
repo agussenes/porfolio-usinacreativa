@@ -1,15 +1,28 @@
 import { Link } from 'react-router-dom';
-import './Header.css'; 
+import './Header.css';
 
 function Header() {
+
+  function cerrarMenu() {
+  const menu = document.getElementById('navbarContenido');
+  if (menu.classList.contains('show')) {
+    const collapse = new window.bootstrap.Collapse(menu, {
+      toggle: false
+    });
+    collapse.hide();
+  }
+}
+
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark container sticky-top">
         <div className="container-fluid">
 
           {/* LOGO */}
-          <Link className="navbar-brand" to="/">
-            <img src="/img/identidad/logoUsina.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
+          <Link className="navbar-brand" to="/" onClick={cerrarMenu}>
+            <img src="/img/identidad/logoUsina.webp" alt="Logo sindicato de luz y fuerza"  height="40" className='PC' loading="lazy" />
+            <img src="/img/identidad/logoHorizontalUsina.webp" alt="Logo sindicato de luz y fuerza"  height="70" className='Mobile' loading="lazy" />
           </Link>
 
           {/* Botón hamburguesa mobile */}
@@ -25,27 +38,36 @@ function Header() {
               {/* Dropdown */}
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="#" id="dropdownMenu" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                  data-bs-toggle="dropdown" aria-expanded="false" onClick={cerrarMenu}>
                   Institucional
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/quienes-somos">Quienes somos</Link></li>
-                  <li><Link className="dropdown-item" to="/vida-institucional">Vida institucional</Link></li>
-                  <li><Link className="dropdown-item" to="/historia">Historia</Link></li>
-                  <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
+                  <li><Link className="dropdown-item" to="/quienes-somos" onClick={cerrarMenu}>Quienes somos</Link></li>
+                  <li><Link className="dropdown-item" to="/historia" onClick={cerrarMenu}>Servicios</Link></li>
                 </ul>
               </li>
 
               {/* Enlaces normales */}
               <li className="nav-item">
-                <Link className="nav-link" to="/nuestra-lucha">Nuestra lucha</Link>
+                <Link className="nav-link" to="/" onClick={cerrarMenu}>La usina</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/beneficios">Beneficios</Link>
+                <Link className="nav-link" to="/" onClick={cerrarMenu}>Clientes</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/novedades">Novedades</Link>
+                <Link className="nav-link" to="/" onClick={cerrarMenu}>Novedades</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contacto" onClick={cerrarMenu}>Contacto</Link>
+              </li>
+
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/"><img src="/img/identidad/sciF.webp" alt="" /></Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/"><img src="/img/identidad/sciV.webp" alt="" /></Link>
+              </li> */}
 
             </ul>
           </div>

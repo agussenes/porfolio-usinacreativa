@@ -25,3 +25,17 @@ header {
     transform: scale(1.05);
     color: var(--color-secondary);
 }
+.Mobile{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .PC{
+        display: none;
+    }
+
+    .Mobile{
+        display: block;
+        
+    }
+}

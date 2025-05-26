@@ -25,6 +25,7 @@ Este proyecto está construido con **Vite** y **React 19** usando las mejores pr
 | typewriter-effect | Efectos de texto escribiéndose solo. |
 | React-countup | Librería de React que te permite animar números que "cuentan" |
 | React-modal | Libreria de React que permite el uso de modales |
+| Libreria aos | animaciones de filtrado y + |
 
 ---
 

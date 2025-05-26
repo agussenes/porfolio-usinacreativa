@@ -12,14 +12,15 @@ function Footer() {
             <div className="d-flex align-items-center mb-3">
               <img
                 src="/img/identidad/logoUsina.webp"
-                alt="Logo Sindicato de Luz y Fuerza de Córdoba"
-                height="50"
-                className="me-2"
+                alt="Logo agencia de comunicacion Usina Creativa"
+                height="40"
+                className="me-2 mobileS"
                 loading="lazy"
               />
             </div>
-            <p className="text-light small">
-              Desde nuestro sindicato hacemos llegar a nuestros asociados y a la comunidad en general todas las noticias relacionadas al sector, de forma ágil y democrática.
+            <p className="text-light small bajadaInfoFooter">
+              <strong>#ComunicaciónQueSeEntiende</strong> <br />
+              Brindamos estrategias de comunicación con creatividad, innovación y gestión integral.
               <br />
               <Link to="/contacto" className="text-info text-decoration-none">Contáctenos!</Link>
             </p>
@@ -30,13 +31,22 @@ function Footer() {
             <h5 className="fw-bold">Contacto</h5>
             <ul className="list-unstyled text-light small">
               <li className="mb-2">
-                <i className="bi bi-geo-alt-fill me-2"></i> Dean Funes 672. Córdoba
+                <i className="bi bi-geo-alt-fill me-2"></i>  Av. Castro Barros 117. Córdoba, Argentina
               </li>
-              <li>
-                <i className="bi bi-envelope-fill me-2"></i> prensaluzyfuerza.cba@gmail.com
+              <li className="mb-2">
+                <i className="bi bi-envelope-fill me-2"></i> info.usinacreativa@gmail.com
+              </li>
+              <li >
+                <i className="bi bi-phone-fill me-2"></i> +54 9 351 547-9413
               </li>
             </ul>
 
+
+          </div>
+
+          {/* Columna 3: Obra Social */}
+          <div className="col-md-3">
+            <h5 className="fw-bold">Seguinos</h5>
             {/* Redes Sociales */}
             <div className="mt-3">
               <a href="#" className="text-light me-3 redesSo"><i className="bi bi-twitter"></i></a>
@@ -46,16 +56,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Columna 3: Obra Social */}
-          <div className="col-md-3">
-            <h5 className="fw-bold">Obra Social del Personal</h5>
-            <ul className="list-unstyled text-light small">
-              <li>
-                <Link to="/obra-social" className="text-info text-decoration-none">&gt; Luz y Fuerza Cba Salud</Link>
-              </li>
-            </ul>
-          </div>
-
         </div>
 
         {/* Línea divisoria */}
@@ -63,15 +63,6 @@ function Footer() {
 
         {/* Copyright */}
         <div className="text-center small text-light d-flex justify-content-center align-items-center">
-          Desarrollado por
-          <a href="https://usinacreativa.com.ar/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.2rem' }}>
-            <img
-              src="/img/identidad/logoUsina.webp"
-              alt="Logo Usina Creativa - Agencia de comunicación y desarrollo del sitio web del sindicato Luz y Fuerza Córdoba"
-              loading="lazy"
-              height="25"
-            />
-          </a>
           © 2025 todos los derechos reservados.
         </div>
 
