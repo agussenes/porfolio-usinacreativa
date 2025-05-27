@@ -12,6 +12,7 @@ import ScrollToTop from './components/reutilizables/ScrollToTop';
 import Home from './components/views/home/Home';
 import ProjectDetail from './components/views/home/subcomponents/ProjectDetail';
 import Contacto from './components/views/contacto/Contacto';
+import LaUsina from './components/views/laUsina/LaUsina';
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio/:slug" element={<ProjectDetail />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/la-usina" element={<LaUsina />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

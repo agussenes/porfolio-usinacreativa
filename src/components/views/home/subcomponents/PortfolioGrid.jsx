@@ -14,6 +14,7 @@ function PortfolioGrid({ selectedCategory }) {
     <section className="portfolio-grid px-3 py-5">
       <h2 className="text-center mb-4">Nuestros Trabajos</h2>
 
+
       <motion.div
         ref={gridRef}
         className="portfolio-grid-wrapper"
@@ -22,7 +23,7 @@ function PortfolioGrid({ selectedCategory }) {
         {clients.map((project) => (
           <motion.div
             key={project.id}
-           className={`portfolio-grid-item portfolio-card ${project.category.toLowerCase().replaceAll(' ', '-')}`}
+            className={`portfolio-grid-item portfolio-card ${project.category.toLowerCase().replaceAll(' ', '-')}`}
 
             layout
             layoutId={project.id.toString()}
@@ -32,6 +33,7 @@ function PortfolioGrid({ selectedCategory }) {
 
         ))}
       </motion.div>
+
 
     </section>
   );

@@ -49,7 +49,7 @@ function Header() {
 
               {/* Enlaces normales */}
               <li className="nav-item">
-                <Link className="nav-link" to="/" onClick={cerrarMenu}>La usina</Link>
+                <Link className="nav-link" to="/la-usina" onClick={cerrarMenu}>La usina</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/" onClick={cerrarMenu}>Clientes</Link>

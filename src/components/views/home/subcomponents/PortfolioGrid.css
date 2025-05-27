@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-left: -1%;
+  margin-left: -0.5%;
   overflow: hidden; /* ✅ importantísimo para evitar que se superpongan secciones siguientes */
 }
 
@@ -24,6 +24,11 @@
 
 /* Responsive */
 @media (max-width: 992px) {
+
+  .portfolio-grid-wrapper{
+    margin-left: 0px;
+  }
+
   .portfolio-grid-item {
     width: 32%;
   }
