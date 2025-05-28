@@ -43,7 +43,7 @@ function Header() {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
                   <li><Link className="dropdown-item" to="/quienes-somos" onClick={cerrarMenu}>Quienes somos</Link></li>
-                  <li><Link className="dropdown-item" to="/historia" onClick={cerrarMenu}>Servicios</Link></li>
+                  <li><Link className="dropdown-item" to="/servicios" onClick={cerrarMenu}>Servicios</Link></li>
                 </ul>
               </li>
 
@@ -52,10 +52,10 @@ function Header() {
                 <Link className="nav-link" to="/la-usina" onClick={cerrarMenu}>La usina</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/" onClick={cerrarMenu}>Clientes</Link>
+                <Link className="nav-link" to="/clientes" onClick={cerrarMenu}>Clientes</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/" onClick={cerrarMenu}>Novedades</Link>
+                <Link className="nav-link" to="/novedades" onClick={cerrarMenu}>Novedades</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contacto" onClick={cerrarMenu}>Contacto</Link>
