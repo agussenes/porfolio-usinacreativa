@@ -11,8 +11,8 @@ function Novedades() {
   const [novedades, setNovedades] = useState([]);
 
   useEffect(() => {
-    // fetch('https://tusitio.com/admin-novedades/novedades/novedades.json')
-    fetch('../../../../admin-novedades/novedades/novedades.json')
+    fetch('http://inovandodes.online/admin-novedades/novedades/novedades.json')
+    // fetch('../../../../admin-novedades/novedades/novedades.json')
       .then(res => res.json())
       .then(data => setNovedades(data))
       .catch(err => console.error('Error al cargar novedades:', err));
@@ -39,7 +39,7 @@ function Novedades() {
               <Col key={index} xs={12} md={6} lg={4} className="mb-4">
                 <div className="novedad-card h-100 p-3 shadow-sm rounded bg-white">
                   <img
-                    src={`https://tusitio.com/admin-novedades/${novedad.imagen}`}
+                    src={`http://inovandodes.online/admin-novedades/${novedad.imagen}`}
                     alt={novedad.titulo}
                     className="img-fluid rounded mb-3"
                   />

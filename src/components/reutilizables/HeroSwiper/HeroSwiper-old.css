@@ -1,4 +1,4 @@
-/* Swiper general */
+/* HeroSwiper.css */
 .hero-swiper-container {
     position: relative;
     width: 100%;
@@ -6,44 +6,28 @@
 
 .hero-swiper {
     width: 100%;
-    height: auto;
+    height: 70vh;
 }
 
-/* Imagen contenida como <img> */
-.bannerGif-img {
-    position: relative;
-    width: 100%;
+.hero-slide {
+    background-size: cover;
+    background-position: top center;
     height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
-.bannerGif-img img.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-/* Overlay de contenido */
 .hero-slide-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+
 }
 
-/* Título, bajada y botón */
 .hero-slide-title {
     font-size: 3.5rem;
     font-weight: bold;
@@ -54,12 +38,14 @@
 .hero-slide-text {
     font-size: 1.2rem;
     text-align: left;
-    max-width: 50%;
+    max-width: 51%;
+
+
 }
 
 .contenedorBotonHeroSwipper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
 }
 
 .botonHeroSwiper {
@@ -87,29 +73,43 @@
     margin-left: 0.5rem;
 }
 
-/* Responsive ajustes */
+.botonHeroSwiper i:hover {
+    font-size: 1.2rem !important;
+}
+
+
 @media (max-width: 768px) {
+
     .hero-swiper {
         height: 80vh;
     }
 
     .hero-slide-title {
         font-size: 2rem;
-        text-align: center;
-        max-width: 100%;
+        font-weight: bold;
     }
 
     .hero-slide-text {
         font-size: 1rem;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .contenedorBotonHeroSwipper {
-        justify-content: center;
     }
 
     .botonHeroSwiper {
         font-size: 1rem !important;
     }
+
+    .hero-slide-title {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-slide-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contenedorBotonHeroSwipper{
+        display: flex;
+        justify-content: center;
+    }
+
 }

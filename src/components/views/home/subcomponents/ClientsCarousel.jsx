@@ -17,7 +17,8 @@ function ClientsCarousel() {
   return (
     <section className="clients-carousel py-5 bg-light">
       <div className="container">
-        <h2 className="text-center mb-4">Las siguientes empresas, instituciones y organizaciones han confiado en nuestra capacidad de trabajo y la calidad de nuestro servicio.</h2>
+        <h2 className="bold mb-4">Las siguientes</h2>
+        <h6 className=" mb-4"> empresas, instituciones y organizaciones han confiado en nuestra capacidad de trabajo y la calidad de nuestro servicio.</h6>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={30}
